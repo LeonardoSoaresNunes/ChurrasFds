@@ -4,29 +4,36 @@
 
 }
 
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+    color: darkblue;
+}
+
 .container{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: cornflowerblue;
-
-
     max-width: 300px;
-    margin:auto;
-    
+    margin:auto;    
     padding: 30px;
     margin-top: 15px;
+    border-radius: 8px;
    
 }
-#adultos{
-    text-align: center;
-    padding: 3px;
-
-
+input{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
 }
-#criancas{
+button{
+    padding: 10px;
+    border-radius: 3px;
     
-
 }
-
-#duracao{
-
+button:hover{
+    background-color: darkblue;
+    color:white;
 
 }
