@@ -9,10 +9,11 @@ function calcular(){
 
     let adultos = inputAdultos.value;
     let criancas = inputCriancas.value;
+    let duracao = inputDuracao.value;
 
 
 
-    let qtdTotalCarne = 400 *  adultos +(400/ 2 * criancas) ;
+    let qtdTotalCarne = carnePP(duracao) *  adultos +(400/ 2 * criancas) ;
     console.log(qtdTotalCarne);
 
 
@@ -20,14 +21,13 @@ function calcular(){
 
 
 function carnePP (duracao){
-    if (duracao >= 6){
-        return 650;
+   if (duracao >= 6){
+       return 650;
 
-    }
-  } else {
+}else {
     return 400;
 }
 
-
+}
 
 console.log(inputAdultos.value , inputCriancas.value , inputDuracao.value);
